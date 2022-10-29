@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
 import React from "react";
 import styled from 'styled-components'
+
 
 
 const StylePage = styled.p`
@@ -9,6 +11,8 @@ color: ${ p => p.theme.colors.text};
 padding: ${ p => p.theme.space[0]};
 margin: ${ p => p.theme.space[0]};
 margin-bottom: ${ p => p.theme.space[2]}px;
+
+
 
 
 `;
@@ -24,6 +28,13 @@ margin-bottom: ${ p => p.theme.space[2]}px;
 
     </>
 
+Statistics.propTypes = {
+    good: PropTypes.number.isRequired, 
+    neutral: PropTypes.number.isRequired, 
+    bad: PropTypes.number.isRequired,
+    countTotalFeedback: PropTypes.number.isRequired,
+    countPositiveFeedbackPercentage: PropTypes.string.isRequired 
 
+}
 
 
