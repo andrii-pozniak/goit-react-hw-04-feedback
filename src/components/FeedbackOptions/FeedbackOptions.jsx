@@ -8,6 +8,5 @@ export const FeedbackOptions = ({onHandleGood, onHandleNeutral, onHandleBad}) =>
             <Button onClick = {onHandleBad}>Bad</Button> 
         </>
     )
-       
   
 }
