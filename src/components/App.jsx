@@ -1,5 +1,5 @@
 
-import {useState, useEffect} from "react";
+import {useState} from "react";
 
 import {Statistics} from "components/Statistics/Statistics";
 import {  Notification} from "components/Notification/Notification";
@@ -13,8 +13,8 @@ export default function App() {
   const [bad, setBad] = useState(0);
   const [open, setOpen] = useState(false); 
  
-  let total = 0;
-    let setPositiveFeedback = 0;
+  let total = 0
+    let setPositiveFeedback = 0
  
   const handleGood = () => {
     setGood (prevState => prevState+1)
@@ -40,7 +40,7 @@ export default function App() {
       setPositiveFeedback = good *100 / (total)
     console.log(setPositiveFeedback)
     console.log(total)
-    return total, setPositiveFeedback
+    return total, setPositiveFeedback;
     }
     return setPositiveFeedback = 0 };
   
