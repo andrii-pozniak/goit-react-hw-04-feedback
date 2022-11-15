@@ -33,13 +33,14 @@ export default function App() {
     total = good + neutral + bad 
  
   console.log('total', total)
+  return total;
   }
   const countPositiveFeedbackPercentage = () => {
     if(total !== 0){
       setPositiveFeedback = good *100 / (total)
     console.log(setPositiveFeedback)
     console.log(total)
-    return total, setPositiveFeedback;
+    return setPositiveFeedback;
     }
     return setPositiveFeedback = 0 };
   
