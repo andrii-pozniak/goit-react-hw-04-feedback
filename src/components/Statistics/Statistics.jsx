@@ -12,9 +12,6 @@ padding: ${ p => p.theme.space[0]};
 margin: ${ p => p.theme.space[0]};
 margin-bottom: ${ p => p.theme.space[2]}px;
 
-
-
-
 `;
 
  export const Statistics = ({good, neutral, bad,total,
