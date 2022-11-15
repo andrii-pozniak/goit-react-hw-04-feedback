@@ -17,14 +17,14 @@ margin-bottom: ${ p => p.theme.space[2]}px;
 
 `;
 
- export const Statistics = ({good, neutral, bad,countTotalFeedback,
-    countPositiveFeedbackPercentage }) => 
+ export const Statistics = ({good, neutral, bad,total,
+    positiveFeedback }) =>   
     <>
     <StylePage>Good: {good}</StylePage>
     <StylePage>Neutral: {neutral}</StylePage>
     <StylePage>Bad: {bad}</StylePage>
-    <StylePage >Total: {countTotalFeedback }</StylePage>
-    <StylePage >StylePageositive feedback: {countPositiveFeedbackPercentage}%</StylePage>
+    <StylePage >Total: {total }</StylePage>
+    <StylePage >StylePageositive feedback: {positiveFeedback}%</StylePage>
 
     </>
 
@@ -32,8 +32,8 @@ Statistics.propTypes = {
     good: PropTypes.number.isRequired, 
     neutral: PropTypes.number.isRequired, 
     bad: PropTypes.number.isRequired,
-    countTotalFeedback: PropTypes.number.isRequired,
-    countPositiveFeedbackPercentage: PropTypes.string.isRequired 
+    // positiveFeedback: PropTypes.number.isRequired,
+    // total: PropTypes.number.isRequired 
 
 }
 
