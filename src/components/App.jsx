@@ -18,8 +18,7 @@ export default function App() {
  
   const handleGood = () => {
     setGood (prevState => prevState+1)
-    setOpen (true)
-    
+    setOpen (true)    
   }
 
   const handleNeutral = () => {
